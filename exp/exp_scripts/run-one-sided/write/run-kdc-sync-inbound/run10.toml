@@ -1,0 +1,53 @@
+global_configs= "-rdma_op=1 -or_sz=1 -threads=1 -payload_sz=8 -run_sec=30 -gid=fe80:0000:0000:0000:ec0d:9a03:00ca:31d8"
+
+[[pass]]
+host = "val01"
+path = ''
+cmd = 'cd projects/krdmakit/exp; ./krc_client_sync'
+
+[[pass]]
+host = "val02"
+path = ''
+cmd = 'cd projects/krdmakit/exp; ./krc_client_sync'
+
+
+[[pass]]
+host = "val04"
+path = ''
+cmd = 'cd projects/krdmakit/exp; ./krc_client_sync'
+
+[[pass]]
+host = "val05"
+path = ''
+cmd = 'cd projects/krdmakit/exp; ./krc_client_sync'
+
+[[pass]]
+host = "val06"
+path = ''
+cmd = 'cd projects/krdmakit/exp; ./krc_client_sync'
+
+[[pass]]
+host = "val07"
+path = ''
+cmd = 'cd projects/krdmakit/exp; ./krc_client_sync'
+
+[[pass]]
+host = "val08"
+path = ''
+cmd = 'cd projects/krdmakit/exp; ./krc_client_sync'
+
+[[pass]]
+host = "val09"
+path = ''
+cmd = 'cd projects/krdmakit/exp; ./krc_client_sync'
+
+[[pass]]
+host = "val12"
+path = ''
+cmd = 'cd projects/krdmakit/exp; ./krc_client_sync'
+
+[[pass]]
+host = "val14"
+path = ''
+cmd = 'cd projects/krdmakit/exp; ./krc_client_sync'
+

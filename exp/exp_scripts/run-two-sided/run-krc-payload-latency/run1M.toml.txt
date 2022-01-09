@@ -1,0 +1,22 @@
+(execute cmd @val08 cd projects/krdmakit/exp; ./kernel_twosided_rc_server -host_len=1 -or_sz=2048 -run_sec=15 -port=1
+connect val08
+(execute cmd @val14 cd projects/krdmakit/exp; ./kernel_twosided_rc_client -vid=1 -or_sz=1 -run_sec=10 -port=1 -gid=fe80:0000:0000:0000:248a:0703:009c:7c94
+connect val14
+@val14      [39m[reporter.hh:37] epoch @ 0: thpt: 3982.55 reqs/sec.1.00011e+06 msec passed since last epoch. 251.096 us/op
+@val14      [0m[39m[reporter.hh:37] epoch @ 1: thpt: 4076.18 reqs/sec.1.0002e+06 msec passed since last epoch. 245.328 us/op
+@val14      [0m[39m[reporter.hh:37] epoch @ 2: thpt: 4080.42 reqs/sec.1.00014e+06 msec passed since last epoch. 245.073 us/op
+@val14      [0m[39m[reporter.hh:37] epoch @ 3: thpt: 4079.39 reqs/sec.1.00015e+06 msec passed since last epoch. 245.135 us/op
+@val14      [0m[39m[reporter.hh:37] epoch @ 4: thpt: 4078.38 reqs/sec.1.00015e+06 msec passed since last epoch. 245.195 us/op
+@val14      [0m[39m[reporter.hh:37] epoch @ 5: thpt: 4079.3 reqs/sec.1.00017e+06 msec passed since last epoch. 245.14 us/op
+@val14      [0m[39m[reporter.hh:37] epoch @ 6: thpt: 4081.39 reqs/sec.1.00015e+06 msec passed since last epoch. 245.014 us/op
+@val14      [0m[39m[reporter.hh:37] epoch @ 7: thpt: 4079.48 reqs/sec.1.00013e+06 msec passed since last epoch. 245.129 us/op
+@val14      [0m[39m[reporter.hh:37] epoch @ 8: thpt: 4080.48 reqs/sec.1.00013e+06 msec passed since last epoch. 245.069 us/op
+@val14      [0m[39m[reporter.hh:37] epoch @ 9: thpt: 4079.39 reqs/sec.1.00015e+06 msec passed since last epoch. 245.135 us/op
+@val14      [0m[39m[kernel_twosided_rc_client.cc:111] retry total cnt:0, retry op per batch:0
+@val14      [0m[35m[kernel_twosided_rc_client.cc:113] done
+@val14      [0m
+exit  val14
+@val08      [35m[kernel_twosided_rc_server.cc:93] max cnt:0
+@val08      [0m[35m[kernel_twosided_rc_server.cc:94] done
+@val08      [0m
+exit  val08

@@ -1,0 +1,58 @@
+global_configs= "-or_sz=1 -payload_sz=64 -threads=3 -write_imm=0 -undefok=write_imm,or_sz "
+
+[[pass]]
+host = "val03"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./user_twosided_rc_server -host_len=12 -port=8000 -write_imm=0'
+
+
+[[pass]]
+host = "val04"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./user_twosided_rc_client -host=0 -addr=val03 -port=8000 -write_imm=0 -id=0'
+
+
+[[pass]]
+host = "val05"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./user_twosided_rc_client -host=1 -addr=val03 -port=8000 -write_imm=0 -id=1'
+
+
+[[pass]]
+host = "val06"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./user_twosided_rc_client -host=2 -addr=val03 -port=8000 -write_imm=0 -id=2'
+
+[[pass]]
+host = "val07"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./user_twosided_rc_client -host=3 -addr=val03 -port=8000 -write_imm=0 -id=3'
+
+[[pass]]
+host = "val08"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./user_twosided_rc_client -host=4 -addr=val03 -port=8000 -write_imm=0 -id=4'
+
+[[pass]]
+host = "val01"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./user_twosided_rc_client -host=5 -addr=val03 -port=8000 -write_imm=0 -id=5'
+
+[[pass]]
+host = "val02"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./user_twosided_rc_client -host=6 -addr=val03 -port=8000 -write_imm=0 -id=6'
+
+[[pass]]
+host = "val09"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./user_twosided_rc_client -host=7 -addr=val03 -port=8000 -write_imm=0 -id=7'
+
+
+[[pass]]
+host = "val12"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./user_twosided_rc_client -host=8 -addr=val03 -port=8000 -write_imm=0 -id=8'
+
+
+

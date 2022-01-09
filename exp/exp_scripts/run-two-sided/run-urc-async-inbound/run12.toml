@@ -1,0 +1,10 @@
+[[pass]]
+host = "val03"
+path = ''
+cmd  = 'cd /cock/krdmakit/exp; ./user_twosided_rc_server -host_len=1 -threads=12 -port=8000 -write_imm=0'
+
+
+[[pass]]
+host = "val04"
+path = ''
+cmd  = 'cd /cock/krdmakit/exp; ./user_twosided_rc_client -host=0 -or_sz=5 -threads=12 -addr=val03 -port=8000 -write_imm=0 -id=0'

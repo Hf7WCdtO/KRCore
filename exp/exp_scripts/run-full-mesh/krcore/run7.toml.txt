@@ -1,0 +1,48 @@
+(execute cmd @val01 cd projects/krdmakit/exp; ./connect_krc_worker -addr=val01 -run_sec=25
+connect val01
+(execute cmd @val02 cd projects/krdmakit/exp; ./connect_krc_worker -addr=val02 -run_sec=25
+connect val02
+(execute cmd @val08 cd projects/krdmakit/exp; ./connect_krc_worker -addr=val08 -run_sec=25
+connect val08
+(execute cmd @val04 cd projects/krdmakit/exp; ./connect_krc_worker -addr=val04 -run_sec=25
+connect val04
+(execute cmd @val05 cd projects/krdmakit/exp; ./connect_krc_worker -addr=val05 -run_sec=25
+connect val05
+(execute cmd @val06 cd projects/krdmakit/exp; ./connect_krc_worker -addr=val06 -run_sec=25
+connect val06
+(execute cmd @val07 cd projects/krdmakit/exp; ./connect_krc_worker -addr=val07 -run_sec=25
+connect val07
+(execute cmd @val09 cd projects/krdmakit/exp; ./connect_krc_trigger -worker_addrs="val01 val02 val08 val04 val05 val06 val07" -run_sec=20
+connect val09
+@val09      [39m[reporter.hh:34] epoch @ 0: thpt: 70970.8 reqs/sec.1.00009e+06 msec passed since last epoch. 338.167 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 66176.3 reqs/sec.1.00016e+06 msec passed since last epoch. 362.667 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 66129.9 reqs/sec.1.00011e+06 msec passed since last epoch. 362.922 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 65558.1 reqs/sec.1.00011e+06 msec passed since last epoch. 366.088 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 65502.1 reqs/sec.1.0001e+06 msec passed since last epoch. 366.4 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 65501.1 reqs/sec.1.0001e+06 msec passed since last epoch. 366.406 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 65460 reqs/sec.1.00011e+06 msec passed since last epoch. 366.636 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 65437.1 reqs/sec.1.0001e+06 msec passed since last epoch. 366.764 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 65762 reqs/sec.1.00011e+06 msec passed since last epoch. 364.952 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 65769.2 reqs/sec.1.0001e+06 msec passed since last epoch. 364.913 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 10: thpt: 65470 reqs/sec.1.00011e+06 msec passed since last epoch. 366.58 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 11: thpt: 65370.1 reqs/sec.1.0001e+06 msec passed since last epoch. 367.14 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 12: thpt: 65442.1 reqs/sec.1.0001e+06 msec passed since last epoch. 366.736 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 13: thpt: 65489.9 reqs/sec.1.00011e+06 msec passed since last epoch. 366.469 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 14: thpt: 60646.5 reqs/sec.1.00011e+06 msec passed since last epoch. 395.736 us/op
+exit  val01
+@val09      [0m[39m[reporter.hh:34] epoch @ 15: thpt: 0 reqs/sec.1.0001e+06 msec passed since last epoch. inf us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 16: thpt: 0 reqs/sec.1.0001e+06 msec passed since last epoch. inf us/op
+@val02      bash: line 1:  3086 Segmentation fault      ./connect_krc_worker -addr=val02 -run_sec=25 -payload_sz=8 -threads=24 -worker_num=7 -port=8000 -server_gid=fe80:0000:0000:0000:ec0d:9a03:00ca:31d8
+exit  val02
+@val09      [0m[39m[reporter.hh:34] epoch @ 17: thpt: 0 reqs/sec.1.0001e+06 msec passed since last epoch. inf us/op
+exit  val08
+@val09      [0m[39m[reporter.hh:34] epoch @ 18: thpt: 0 reqs/sec.1.0001e+06 msec passed since last epoch. inf us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 19: thpt: 0 reqs/sec.1.0001e+06 msec passed since last epoch. inf us/op
+exit  val04
+exit  val05
+@val09      [0m[31m[trigger.cc:224] Assertion!
+@val09      [0m
+@val09      bash: line 1: 39771 Aborted                 ./connect_krc_trigger -worker_addrs="val01 val02 val08 val04 val05 val06 val07" -run_sec=20 -payload_sz=8 -threads=24 -worker_num=7 -port=8000 -server_gid=fe80:0000:0000:0000:ec0d:9a03:00ca:31d8
+exit  val09
+exit  val06
+exit  val07

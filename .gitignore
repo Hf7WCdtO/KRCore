@@ -1,0 +1,9 @@
+.idea/
+.vscode/
+target/
+Cargo.lock
+scripts/copy.sh
+scripts/bootstrap.py
+scripts/run.toml
+scripts/make-all.toml
+**/target

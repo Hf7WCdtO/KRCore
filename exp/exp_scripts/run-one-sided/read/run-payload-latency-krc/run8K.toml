@@ -1,0 +1,5 @@
+[[pass]]
+host = "val08"
+path = ''
+cmd = 'cd projects/krdmakit/exp; ./krc_client_sync -threads=1 -payload_sz=8192 -gid=fe80:0000:0000:0000:ec0d:9a03:0078:6416'
+

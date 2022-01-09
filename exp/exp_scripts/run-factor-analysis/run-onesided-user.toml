@@ -1,0 +1,10 @@
+[[pass]]
+host = "val03"
+path = ''
+cmd = 'cd projects/krdmakit/exp; ./urc_server_sync -run_sec=8'
+
+
+[[pass]]
+host = "val01"
+path = ''
+cmd = 'cd projects/krdmakit/exp; ./urc_client_sync -rdma_op=0 -or_sz=1 -threads=1 -run_sec=5 -addr=val03:8888 -payload_sz=8'

@@ -1,0 +1,20 @@
+(execute cmd @val02 cd projects/krdmakit/exp; ./urc_server_sync
+connect val02
+(execute cmd @val08 cd projects/krdmakit/exp; ./urc_client_sync -or_sz=1 -threads=1 -addr=val02:8888 -payload_sz=512
+connect val08
+@val02      [35m[urc_server.cc:21] Pingping server listenes at localhost:8888
+@val02      [0m[39m[urc_server.cc:57] thpt bench server started!
+@val08      [35m[urc_client.cc:121] t-0 started
+@val08      [0m[39m[reporter.hh:34] epoch @ 0: thpt: 428502 reqs/sec.1.00008e+06 msec passed since last epoch. 2.33371 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 450569 reqs/sec.1.00011e+06 msec passed since last epoch. 2.21941 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 450947 reqs/sec.1.0001e+06 msec passed since last epoch. 2.21755 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 450727 reqs/sec.1.0001e+06 msec passed since last epoch. 2.21864 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 450304 reqs/sec.1.00007e+06 msec passed since last epoch. 2.22072 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 450656 reqs/sec.1.0001e+06 msec passed since last epoch. 2.21899 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 451011 reqs/sec.1.0001e+06 msec passed since last epoch. 2.21724 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 451079 reqs/sec.1.0001e+06 msec passed since last epoch. 2.21691 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 451040 reqs/sec.1.0001e+06 msec passed since last epoch. 2.2171 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 450572 reqs/sec.1.0001e+06 msec passed since last epoch. 2.2194 us/op
+exit  val08
+@val02      [0m[35m[urc_server.cc:64] server exit!
+exit  val02

@@ -1,0 +1,15 @@
+(execute cmd @val08 cd projects/krdmakit/exp; ./krc_client_sync -threads=1 -payload_sz=32768 -gid=fe80:0000:0000:0000:ec0d:9a03:0078:6416
+connect val08
+@val08      [39m[reporter.hh:34] epoch @ 0: thpt: 152152 reqs/sec.1.0001e+06 msec passed since last epoch. 6.57239 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 155134 reqs/sec.1.00012e+06 msec passed since last epoch. 6.44602 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 154950 reqs/sec.1.0001e+06 msec passed since last epoch. 6.4537 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 154830 reqs/sec.1.0001e+06 msec passed since last epoch. 6.45869 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 155231 reqs/sec.1.0001e+06 msec passed since last epoch. 6.44201 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 154971 reqs/sec.1.0001e+06 msec passed since last epoch. 6.45283 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 155103 reqs/sec.1.0001e+06 msec passed since last epoch. 6.44732 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 155161 reqs/sec.1.0001e+06 msec passed since last epoch. 6.4449 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 154970 reqs/sec.1.0001e+06 msec passed since last epoch. 6.45285 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 155178 reqs/sec.1.0001e+06 msec passed since last epoch. 6.44421 us/op
+@val08      [0m[35m[krc_client.cc:97] done
+@val08      [0m
+exit  val08

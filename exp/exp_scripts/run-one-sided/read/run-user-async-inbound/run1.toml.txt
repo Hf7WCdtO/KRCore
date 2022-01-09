@@ -1,0 +1,2 @@
+(execute cmd @val03 cd projects/krdmakit/exp; ./urc_server_sync -run_sec=30
+connect val03

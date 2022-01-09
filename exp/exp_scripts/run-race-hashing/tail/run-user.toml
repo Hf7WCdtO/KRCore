@@ -1,0 +1,66 @@
+global_configs= "-or_sz=4 -payload_sz=64 -write_imm=0 -undefok=write_imm,or_sz -port=8000"
+
+# Analyser
+[[pass]]
+host = "val10"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./racing_hash_analyser -host_len=10 -threads=1 -run_sec=50 -tick_interval_us=100'
+#cmd  = 'cd projects/krdmakit/exp; ./racing_hash_analyser -host_len=10 -threads=1 -run_sec=50 -tick_interval_us=1000000'
+
+
+# server
+[[pass]]
+host = "val09"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./racing_hash_user_server -run_sec=50'
+
+
+# wokers
+[[pass]]
+host = "val01"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./racing_hash_user_elastic_worker_tail_lat -host=0 -analyser_addr=val10:8000 -threads=24 -tick_interval_us=100  -server_addr=val09:8000 -run_sec=40'
+
+[[pass]]
+host = "val02"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./racing_hash_user_elastic_worker_tail_lat -host=1 -analyser_addr=val10:8000 -threads=24 -tick_interval_us=100  -server_addr=val09:8000 -run_sec=40'
+
+[[pass]]
+host = "val03"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./racing_hash_user_elastic_worker_tail_lat -host=2 -analyser_addr=val10:8000 -threads=24 -tick_interval_us=100  -server_addr=val09:8000 -run_sec=40'
+
+[[pass]]
+host = "val04"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./racing_hash_user_elastic_worker_tail_lat -host=3 -analyser_addr=val10:8000 -threads=24 -tick_interval_us=100  -server_addr=val09:8000 -run_sec=40'
+
+[[pass]]
+host = "val05"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./racing_hash_user_elastic_worker_tail_lat -host=4 -analyser_addr=val10:8000 -threads=24 -tick_interval_us=100  -server_addr=val09:8000 -run_sec=40'
+
+[[pass]]
+host = "val06"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./racing_hash_user_elastic_worker_tail_lat -host=5 -analyser_addr=val10:8000 -threads=24 -tick_interval_us=100  -server_addr=val09:8000 -run_sec=40'
+
+[[pass]]
+host = "val07"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./racing_hash_user_elastic_worker_tail_lat -host=6 -analyser_addr=val10:8000 -threads=24 -tick_interval_us=100  -server_addr=val09:8000 -run_sec=40'
+
+[[pass]]
+host = "val08"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./racing_hash_user_elastic_worker_tail_lat -host=7 -analyser_addr=val10:8000 -threads=24 -tick_interval_us=100  -server_addr=val09:8000 -run_sec=40'
+
+
+[[pass]]
+host = "val10"
+path = ''
+cmd  = 'cd projects/krdmakit/exp; ./racing_hash_trigger -worker_addrs="val01 val02 val03 val04 val05 val06 val07 val08" -threads=1'
+
+
+

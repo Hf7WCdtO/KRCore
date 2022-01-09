@@ -1,0 +1,19 @@
+(execute cmd @val08 cd projects/krdmakit/exp; ./user_payload_trc_server -host_len=1 -threads=1 -port=8000 -write_imm=0
+connect val08
+(execute cmd @val14 cd projects/krdmakit/exp; ./user_payload_trc_client -host=0 -or_sz=1 -threads=1 -addr=val08 -port=8000 -write_imm=0 -id=0
+connect val14
+@val08      [32m[user_payload_latency_rc_server.cc:82] sanity check write imm: 0
+@val08      [0m[35m[user_payload_latency_rc_server.cc:115] Pingping server listenes at localhost:8000
+@val08      [0m[39m[user_payload_latency_rc_server.cc:158] get client connection via RCM. client name [client-qp]
+@val08      [0m[39m[user_payload_latency_rc_server.cc:190] two sided RC server started!
+@val14      [39m[reporter.hh:37] epoch @ 0: thpt: 202805 reqs/sec.1.0001e+06 msec passed since last epoch. 4.93084 us/op
+@val14      [0m[39m[reporter.hh:37] epoch @ 1: thpt: 215792 reqs/sec.1.00017e+06 msec passed since last epoch. 4.63409 us/op
+@val14      [0m[39m[reporter.hh:37] epoch @ 2: thpt: 231542 reqs/sec.1.00011e+06 msec passed since last epoch. 4.31887 us/op
+@val14      [0m[39m[reporter.hh:37] epoch @ 3: thpt: 231901 reqs/sec.1.0001e+06 msec passed since last epoch. 4.31219 us/op
+@val14      [0m[39m[reporter.hh:37] epoch @ 4: thpt: 230549 reqs/sec.1.00011e+06 msec passed since last epoch. 4.33747 us/op
+@val14      [0m[39m[reporter.hh:37] epoch @ 5: thpt: 231481 reqs/sec.1.00011e+06 msec passed since last epoch. 4.32001 us/op
+@val14      [0m[39m[reporter.hh:37] epoch @ 6: thpt: 231807 reqs/sec.1.00012e+06 msec passed since last epoch. 4.31393 us/op
+@val14      [0m[39m[reporter.hh:37] epoch @ 7: thpt: 225335 reqs/sec.1.00011e+06 msec passed since last epoch. 4.43783 us/op
+@val14      [0m[39m[reporter.hh:37] epoch @ 8: thpt: 232697 reqs/sec.1.0001e+06 msec passed since last epoch. 4.29744 us/op
+exit  val14
+exit  val08

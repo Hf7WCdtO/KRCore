@@ -1,0 +1,19 @@
+global_configs= "-or_sz=5 -payload_sz=64 -threads=24 -write_imm 0 -undefok=write_imm,or_sz "
+
+[[pass]]
+host = "val03"
+path = ''
+cmd  = 'cd /cock/krdmakit/exp; ./user_twosided_rc_server -host_len=2 -threads=24 -port=8000 -write_imm=0'
+
+
+[[pass]]
+host = "val04"
+path = ''
+cmd  = 'cd /cock/krdmakit/exp; ./user_twosided_rc_client -host=0 -or_sz=5 -threads=24 -addr=val03 -port=8000 -write_imm=0 -id=0'
+
+
+[[pass]]
+host = "val05"
+path = ''
+cmd  = 'cd /cock/krdmakit/exp; ./user_twosided_rc_client -host=1 -or_sz=5 -threads=24 -addr=val03 -port=8000 -write_imm=0 -id=1'
+

@@ -1,0 +1,5 @@
+[[pass]]
+host = "val12"
+path = ''
+cmd = 'cd projects/krdmakit/exp; ./rc_connect_client_kernel -threads=1 -gid=fe80:0000:0000:0000:ec0d:9a03:0078:645e'
+

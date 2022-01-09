@@ -1,0 +1,51 @@
+(execute cmd @val01 cd projects/krdmakit/exp; ./connect_krc_worker -addr=val01 -run_sec=25
+connect val01
+(execute cmd @val02 cd projects/krdmakit/exp; ./connect_krc_worker -addr=val02 -run_sec=25
+connect val02
+(execute cmd @val08 cd projects/krdmakit/exp; ./connect_krc_worker -addr=val08 -run_sec=25
+connect val08
+(execute cmd @val04 cd projects/krdmakit/exp; ./connect_krc_worker -addr=val04 -run_sec=25
+connect val04
+(execute cmd @val05 cd projects/krdmakit/exp; ./connect_krc_worker -addr=val05 -run_sec=25
+connect val05
+(execute cmd @val06 cd projects/krdmakit/exp; ./connect_krc_worker -addr=val06 -run_sec=25
+connect val06
+(execute cmd @val07 cd projects/krdmakit/exp; ./connect_krc_worker -addr=val07 -run_sec=25
+connect val07
+(execute cmd @val12 cd projects/krdmakit/exp; ./connect_krc_worker -addr=val12 -run_sec=25
+connect val12
+(execute cmd @val09 cd projects/krdmakit/exp; ./connect_krc_trigger -worker_addrs="val01 val02 val08 val04 val05 val06 val07 val12" -run_sec=20
+connect val09
+@val09      [39m[reporter.hh:34] epoch @ 0: thpt: 1.24972e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 19.2043 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 1.53283e+06 reqs/sec.1.00016e+06 msec passed since last epoch. 15.6573 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 1.53273e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 15.6584 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 1.53261e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 15.6595 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 1.53227e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 15.6631 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 1.53051e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 15.6811 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 1.53177e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 15.6681 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 1.53171e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 15.6688 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 1.53181e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 15.6677 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 1.53218e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 15.664 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 10: thpt: 1.5333e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 15.6525 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 11: thpt: 1.53351e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 15.6504 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 12: thpt: 1.53354e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 15.6501 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 13: thpt: 726819 reqs/sec.1.0001e+06 msec passed since last epoch. 33.0206 us/op
+exit  val01
+@val09      [0m[39m[reporter.hh:34] epoch @ 14: thpt: 0 reqs/sec.1.0001e+06 msec passed since last epoch. inf us/op
+@val02      bash: line 1: 42252 Segmentation fault      ./connect_krc_worker -addr=val02 -run_sec=25 -payload_sz=8 -threads=24 -worker_num=1 -port=8000 -server_gid=fe80:0000:0000:0000:ec0d:9a03:00ca:31d8
+exit  val02
+@val09      [0m[39m[reporter.hh:34] epoch @ 15: thpt: 0 reqs/sec.1.0001e+06 msec passed since last epoch. inf us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 16: thpt: 0 reqs/sec.1.0001e+06 msec passed since last epoch. inf us/op
+exit  val08
+@val09      [0m[39m[reporter.hh:34] epoch @ 17: thpt: 0 reqs/sec.1.0001e+06 msec passed since last epoch. inf us/op
+exit  val04
+@val09      [0m[39m[reporter.hh:34] epoch @ 18: thpt: 0 reqs/sec.1.0001e+06 msec passed since last epoch. inf us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 19: thpt: 0 reqs/sec.1.0001e+06 msec passed since last epoch. inf us/op
+exit  val05
+exit  val06
+@val09      [0m[31m[trigger.cc:224] Assertion!
+@val09      [0m
+@val09      bash: line 1: 36291 Aborted                 ./connect_krc_trigger -worker_addrs="val01 val02 val08 val04 val05 val06 val07 val12" -run_sec=20 -payload_sz=8 -threads=24 -worker_num=1 -port=8000 -server_gid=fe80:0000:0000:0000:ec0d:9a03:00ca:31d8
+exit  val09
+exit  val07
+exit  val12

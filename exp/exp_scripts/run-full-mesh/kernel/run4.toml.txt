@@ -1,0 +1,36 @@
+(execute cmd @val01 cd projects/krdmakit/exp; ./connect_lite_worker -addr=val01 -run_sec=25
+connect val01
+(execute cmd @val02 cd projects/krdmakit/exp; ./connect_lite_worker -addr=val02 -run_sec=25
+connect val02
+(execute cmd @val03 cd projects/krdmakit/exp; ./connect_lite_worker -addr=val03 -run_sec=25
+connect val03
+(execute cmd @val04 cd projects/krdmakit/exp; ./connect_lite_worker -addr=val04 -run_sec=25
+connect val04
+(execute cmd @val09 cd projects/krdmakit/exp; ./connect_lite_trigger -worker_addrs="val01 val02 val03 val04" -run_sec=20
+connect val09
+@val09      [39m[reporter.hh:34] epoch @ 0: thpt: 205962 reqs/sec.1.00009e+06 msec passed since last epoch. 116.526 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 195118 reqs/sec.1.00016e+06 msec passed since last epoch. 123.002 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 195681 reqs/sec.1.0001e+06 msec passed since last epoch. 122.648 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 195980 reqs/sec.1.00011e+06 msec passed since last epoch. 122.461 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 195445 reqs/sec.1.00011e+06 msec passed since last epoch. 122.797 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 195086 reqs/sec.1.00011e+06 msec passed since last epoch. 123.023 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 195947 reqs/sec.1.0001e+06 msec passed since last epoch. 122.482 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 195540 reqs/sec.1.0001e+06 msec passed since last epoch. 122.737 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 195724 reqs/sec.1.00011e+06 msec passed since last epoch. 122.622 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 194833 reqs/sec.1.0001e+06 msec passed since last epoch. 123.182 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 10: thpt: 195027 reqs/sec.1.0001e+06 msec passed since last epoch. 123.06 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 11: thpt: 195055 reqs/sec.1.0001e+06 msec passed since last epoch. 123.042 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 12: thpt: 195314 reqs/sec.1.0001e+06 msec passed since last epoch. 122.879 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 13: thpt: 195253 reqs/sec.1.00011e+06 msec passed since last epoch. 122.917 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 14: thpt: 195854 reqs/sec.1.0001e+06 msec passed since last epoch. 122.54 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 15: thpt: 195738 reqs/sec.1.00011e+06 msec passed since last epoch. 122.613 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 16: thpt: 195670 reqs/sec.1.0001e+06 msec passed since last epoch. 122.656 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 17: thpt: 195737 reqs/sec.1.0001e+06 msec passed since last epoch. 122.613 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 18: thpt: 194943 reqs/sec.1.00011e+06 msec passed since last epoch. 123.113 us/op
+@val09      [0m[39m[reporter.hh:34] epoch @ 19: thpt: 54830.3 reqs/sec.1.0001e+06 msec passed since last epoch. 437.714 us/op
+@val09      [0m
+exit  val01
+exit  val09
+exit  val02
+exit  val03
+exit  val04

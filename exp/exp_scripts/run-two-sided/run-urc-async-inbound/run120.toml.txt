@@ -1,0 +1,222 @@
+(execute cmd @val03 cd /cock/krdmakit/exp; ./user_twosided_rc_server -host_len=6 -threads=24 -port=8000 -write_imm=0
+connect val03
+(execute cmd @val04 cd /cock/krdmakit/exp; ./user_twosided_rc_client -host=0 -or_sz=12 -threads=24 -addr=val03 -port=8000 -write_imm=0 -id=0
+connect val04
+(execute cmd @val05 cd /cock/krdmakit/exp; ./user_twosided_rc_client -host=1 -or_sz=12 -threads=24 -addr=val03 -port=8000 -write_imm=0 -id=1
+connect val05
+(execute cmd @val06 cd /cock/krdmakit/exp; ./user_twosided_rc_client -host=2 -or_sz=12 -threads=24 -addr=val03 -port=8000 -write_imm=0 -id=2
+connect val06
+(execute cmd @val07 cd /cock/krdmakit/exp; ./user_twosided_rc_client -host=3 -or_sz=12 -threads=24 -addr=val03 -port=8000 -write_imm=0 -id=3
+connect val07
+(execute cmd @val08 cd /cock/krdmakit/exp; ./user_twosided_rc_client -host=4 -or_sz=12 -threads=24 -addr=val03 -port=8000 -write_imm=0 -id=4
+connect val08
+@val03      [32m[user_twosided_rc_server.cc:83] sanity check write imm: 0
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8002
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8001
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8000
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8003
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8009
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8005
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8006
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8007
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8013
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8004
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8015
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8011
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8012
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8008
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8014
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8010
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8016
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8021
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8018
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8019
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8017
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8020
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8022
+@val03      [0m[35m[user_twosided_rc_server.cc:116] Pingping server listenes at localhost:8023
+@val03      [0m[39m[[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[39m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[39m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m39m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[[3939m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0mm[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[39m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[39m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[39m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[39m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[39m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[[3939mm[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [39m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[39m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[0m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[39m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[39m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[39m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[39m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[39m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[39
+@val04      [39m[reporter.hh:34] epoch @ 0: thpt: 2.11726e+07 reqs/sec.1.00009e+06 msec passed since last epoch. 1.13354 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 2.17578e+07 reqs/sec.1.0002e+06 msec passed since last epoch. 1.10305 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 1.83025e+07 reqs/sec.1.00015e+06 msec passed since last epoch. 1.31129 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 1.51545e+07 reqs/sec.1.00012e+06 msec passed since last epoch. 1.58369 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 1.29183e+07 reqs/sec.1.00011e+06 msec passed since last epoch. 1.85784 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 1.13375e+07 reqs/sec.1.00012e+06 msec passed since last epoch. 2.11687 us/op
+@val05      [39m[reporter.hh:34] epoch @ 0: thpt: 1.63884e+07 reqs/sec.1.00009e+06 msec passed since last epoch. 1.46445 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 1.68506e+07 reqs/sec.1.00017e+06 msec passed since last epoch. 1.42428 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 1.49248e+07 reqs/sec.1.00014e+06 msec passed since last epoch. 1.60807 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 1.16242e+07 reqs/sec.1.00013e+06 msec passed since last epoch. 2.06466 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 1.03912e+07 reqs/sec.1.00013e+06 msec passed since last epoch. 2.30964 us/op
+@val06      [39m[reporter.hh:34] epoch @ 0: thpt: 1.34185e+07 reqs/sec.1.00009e+06 msec passed since last epoch. 1.78858 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 1.33573e+07 reqs/sec.1.00018e+06 msec passed since last epoch. 1.79677 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 1.16117e+07 reqs/sec.1.00012e+06 msec passed since last epoch. 2.06687 us/op
+@val07      [39m[reporter.hh:34] epoch @ 0: thpt: 1.0661e+07 reqs/sec.1.00009e+06 msec passed since last epoch. 2.2512 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 1.06247e+07 reqs/sec.1.00018e+06 msec passed since last epoch. 2.25889 us/op
+@val03      m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[39m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[39m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[39m[user_twosided_rc_server.cc:159] get client connection via RCM. client name [client-qp]
+@val03      [0m[[[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val03      [0m[39m[user_twosided_rc_server.cc:191] two sided RC server started!
+@val08      [39m[reporter.hh:34] epoch @ 0: thpt: 8.73959e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 2.74612 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 9.59307e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 2.50181 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 9.59071e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.50242 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 9.58473e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 2.50398 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 9.58842e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.50302 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 9.67223e+06 reqs/sec.1.00016e+06 msec passed since last epoch. 2.48133 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 9.58912e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.50284 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 9.58829e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.50305 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 9.59659e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.50089 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 9.59645e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.50092 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 9.68046e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 2.47922 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 9.59867e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.50035 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 9.59332e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.50174 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 9.58894e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.50288 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 9.59384e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.5016 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 9.67699e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.48011 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 9.59685e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.50082 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 9.59331e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 2.50174 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 9.59495e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 2.50131 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 9.59255e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.50194 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 9.67873e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 2.47967 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 9.5985e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 2.50039 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 10: thpt: 9.59189e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.50211 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 9.4995e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.52645 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 9.49545e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 2.52753 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 9.57582e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.50631 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 9.49343e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.52806 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 11: thpt: 9.48996e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 2.52899 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 10: thpt: 9.59178e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.50214 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 9.58622e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.50359 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 9.67379e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 2.48093 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 9.59442e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 2.50145 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 12: thpt: 9.5969e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.50081 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 9.59139e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.50224 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 11: thpt: 9.59571e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.50112 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 9.67854e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 2.47971 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 10: thpt: 9.59741e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.50067 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 13: thpt: 9.59093e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.50236 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 9.58658e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 2.5035 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 12: thpt: 9.58722e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.50333 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 9.6683e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 2.48234 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 11: thpt: 9.58824e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.50307 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 14: thpt: 9.58728e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 2.50332 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 13: thpt: 9.50018e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.52627 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 10: thpt: 9.50019e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.52627 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 9.58191e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 2.50472 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 12: thpt: 9.5031e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.52549 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 15: thpt: 9.50023e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.52625 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 11: thpt: 9.5852e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.50386 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 14: thpt: 9.58663e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.50349 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 10: thpt: 9.66989e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 2.48193 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 13: thpt: 9.59057e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.50246 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 16: thpt: 9.58747e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.50327 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 12: thpt: 9.59521e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.50125 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 15: thpt: 9.59623e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.50098 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 11: thpt: 9.67927e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 2.47953 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 14: thpt: 9.59788e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.50055 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 17: thpt: 9.59595e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 2.50105 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 13: thpt: 9.58709e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.50337 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 16: thpt: 9.58507e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.50389 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 15: thpt: 9.48776e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.52958 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 12: thpt: 9.57571e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 2.50634 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 18: thpt: 9.48548e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.53018 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 14: thpt: 9.48856e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 2.52936 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 17: thpt: 9.48876e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.52931 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 13: thpt: 9.66584e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 2.48297 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 16: thpt: 9.59187e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 2.50212 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 19: thpt: 9.59313e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 2.50179 us/op
+@val04      [0m
+exit  val04
+@val07      [0m[39m[reporter.hh:34] epoch @ 15: thpt: 1.01917e+07 reqs/sec.1.00011e+06 msec passed since last epoch. 2.35486 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 18: thpt: 1.04409e+07 reqs/sec.1.00011e+06 msec passed since last epoch. 2.29865 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 17: thpt: 1.1389e+07 reqs/sec.1.00012e+06 msec passed since last epoch. 2.10729 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 14: thpt: 1.12134e+07 reqs/sec.1.0001e+06 msec passed since last epoch. 2.1403 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 16: thpt: 1.1779e+07 reqs/sec.1.00012e+06 msec passed since last epoch. 2.03753 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 19: thpt: 1.17846e+07 reqs/sec.1.00011e+06 msec passed since last epoch. 2.03655 us/op
+@val05      [0m
+exit  val05
+@val08      [0m[39m[reporter.hh:34] epoch @ 15: thpt: 1.29473e+07 reqs/sec.1.00011e+06 msec passed since last epoch. 1.85368 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 18: thpt: 1.32708e+07 reqs/sec.1.00012e+06 msec passed since last epoch. 1.80848 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 17: thpt: 1.48312e+07 reqs/sec.1.00011e+06 msec passed since last epoch. 1.61821 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 16: thpt: 1.52938e+07 reqs/sec.1.0001e+06 msec passed since last epoch. 1.56926 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 19: thpt: 1.52125e+07 reqs/sec.1.00012e+06 msec passed since last epoch. 1.57765 us/op
+@val06      [0m
+exit  val06
+@val07      [0m[39m[reporter.hh:34] epoch @ 18: thpt: 1.67485e+07 reqs/sec.1.00011e+06 msec passed since last epoch. 1.43297 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 17: thpt: 1.82174e+07 reqs/sec.1.00011e+06 msec passed since last epoch. 1.31742 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 19: thpt: 1.87004e+07 reqs/sec.1.00011e+06 msec passed since last epoch. 1.28339 us/op
+@val07      [0m
+exit  val07
+@val08      [0m[39m[reporter.hh:34] epoch @ 18: thpt: 2.13384e+07 reqs/sec.1.0001e+06 msec passed since last epoch. 1.12473 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 19: thpt: 2.47271e+07 reqs/sec.1.00011e+06 msec passed since last epoch. 0.970595 us/op
+@val08      [0m
+exit  val08
+@val03      [0m[[39m[rctrl.hh:91] stop with :20 processed.
+@val03      [0m[[39m[rctrl.hh:91] stop with :20 processed.
+@val03      [[0m3939m[rctrl.hh:91] stop with :20 processed.
+@val03      [0m[39m[rctrl.hh:91] stop with :20 processed.
+@val03      [[[[0m[[[[39m[[[39[m39m[rctrl.hh:91] stop with :20 processed.
+@val03      393939[rctrl.hh:91] stop with :20 processed.
+@val03      m[rctrl.hh:91] stop with :20 processed.
+@val03      [39m[rctrl.hh:91] stop with :20 processed.
+@val03      [0m[39m[rctrl.hh:91] stop with :20 processed.
+@val03      [0m[39m[rctrl.hh:91] stop with :20 processed.
+@val03      [0m[0m[rctrl.hh:91] stop with :20 processed.
+@val03      [0mm[rctrl.hh:91] stop with :20 processed.
+@val03      [0mm[rctrl.hh:91] stop with :20 processed.
+@val03      [0m39m[rctrl.hh:91] stop with :20 processed.
+@val03      [0m[39m[rctrl.hh:91] stop with :20 processed.
+@val03      [0m[39m[rctrl.hh:91] stop with :20 processed.
+@val03      [0m39m[rctrl.hh:91] stop with :20 processed.
+@val03      [0m39m[rctrl.hh:91] stop with :20 processed.
+@val03      [0m39mm[rctrl.hh:91] stop with :20 processed.
+@val03      39[0m39m[rctrl.hh:91] stop with :20 processed.
+@val03      [[0m39m[rctrl.hh:91] stop with :20 processed.
+@val03      [0m[rctrl.hh:91] stop with :20 processed.
+@val03      [0mm[rctrl.hh:91] stop with :20 processed.
+@val03      [0m[0m[39m[rctrl.hh:91] stop with :20 processed.
+@val03      [0m[0m
+exit  val03

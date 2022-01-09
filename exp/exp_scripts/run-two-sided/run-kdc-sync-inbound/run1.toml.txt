@@ -1,0 +1,32 @@
+(execute cmd @val09 cd projects/krdmakit/exp; ./kernel_twosided_rc_server -host_len=11 -or_sz=2048 -threads=1 -run_sec=40 -port=1
+connect val09
+(execute cmd @val01 cd projects/krdmakit/exp; ./kernel_twosided_rc_client -vid=1 -or_sz=1 -threads=1 -run_sec=20 -port=1 -gid=fe80:0000:0000:0000:248a:0703:009c:7e00
+connect val01
+@val01      [39m[reporter.hh:34] epoch @ 0: thpt: 192210 reqs/sec.1.00009e+06 msec passed since last epoch. 5.20266 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 192117 reqs/sec.1.00016e+06 msec passed since last epoch. 5.20516 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 192140 reqs/sec.1.00013e+06 msec passed since last epoch. 5.20454 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 192067 reqs/sec.1.00014e+06 msec passed since last epoch. 5.20652 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 191968 reqs/sec.1.00012e+06 msec passed since last epoch. 5.2092 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 192413 reqs/sec.1.00012e+06 msec passed since last epoch. 5.19714 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 192162 reqs/sec.1.00012e+06 msec passed since last epoch. 5.20393 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 192571 reqs/sec.1.00012e+06 msec passed since last epoch. 5.19289 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 191537 reqs/sec.1.00011e+06 msec passed since last epoch. 5.22092 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 189821 reqs/sec.1.00011e+06 msec passed since last epoch. 5.26812 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 10: thpt: 192679 reqs/sec.1.00011e+06 msec passed since last epoch. 5.18998 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 11: thpt: 191738 reqs/sec.1.00012e+06 msec passed since last epoch. 5.21545 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 12: thpt: 192486 reqs/sec.1.00012e+06 msec passed since last epoch. 5.19519 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 13: thpt: 191850 reqs/sec.1.00011e+06 msec passed since last epoch. 5.21239 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 14: thpt: 192415 reqs/sec.1.00011e+06 msec passed since last epoch. 5.19709 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 15: thpt: 192797 reqs/sec.1.00012e+06 msec passed since last epoch. 5.1868 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 16: thpt: 192081 reqs/sec.1.00012e+06 msec passed since last epoch. 5.20613 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 17: thpt: 192693 reqs/sec.1.00011e+06 msec passed since last epoch. 5.1896 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 18: thpt: 192007 reqs/sec.1.0001e+06 msec passed since last epoch. 5.20814 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 19: thpt: 190490 reqs/sec.1.00012e+06 msec passed since last epoch. 5.24962 us/op
+@val01      [0m[39m[kernel_twosided_rc_client.cc:102] retry total cnt:0, retry op per batch:0
+@val01      [0m[35m[kernel_twosided_rc_client.cc:104] done
+@val01      [0m
+exit  val01
+@val09      [35m[kernel_twosided_rc_server.cc:93] max cnt:0
+@val09      [0m[35m[kernel_twosided_rc_server.cc:94] done
+@val09      [0m
+exit  val09

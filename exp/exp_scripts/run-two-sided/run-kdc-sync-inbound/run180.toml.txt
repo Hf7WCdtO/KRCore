@@ -1,0 +1,263 @@
+(execute cmd @val09 cd projects/krdmakit/exp; ./kernel_twosided_rc_server -host_len=11 -or_sz=2048 -threads=18 -run_sec=40 -port=1
+connect val09
+(execute cmd @val01 cd projects/krdmakit/exp; ./kernel_twosided_rc_client -vid=1 -or_sz=1 -threads=18 -run_sec=20 -port=1 -gid=fe80:0000:0000:0000:248a:0703:009c:7e00
+connect val01
+(execute cmd @val02 cd projects/krdmakit/exp; ./kernel_twosided_rc_client -vid=2 -or_sz=1 -threads=18 -run_sec=20 -port=1 -gid=fe80:0000:0000:0000:248a:0703:009c:7e00
+connect val02
+(execute cmd @val03 cd projects/krdmakit/exp; ./kernel_twosided_rc_client -vid=3 -or_sz=1 -threads=18 -run_sec=20 -port=1 -gid=fe80:0000:0000:0000:248a:0703:009c:7e00
+connect val03
+(execute cmd @val04 cd projects/krdmakit/exp; ./kernel_twosided_rc_client -vid=4 -or_sz=1 -threads=18 -run_sec=20 -port=1 -gid=fe80:0000:0000:0000:248a:0703:009c:7e00
+connect val04
+(execute cmd @val05 cd projects/krdmakit/exp; ./kernel_twosided_rc_client -vid=5 -or_sz=1 -threads=18 -run_sec=20 -port=1 -gid=fe80:0000:0000:0000:248a:0703:009c:7e00
+connect val05
+(execute cmd @val06 cd projects/krdmakit/exp; ./kernel_twosided_rc_client -vid=6 -or_sz=1 -threads=18 -run_sec=20 -port=1 -gid=fe80:0000:0000:0000:248a:0703:009c:7e00
+connect val06
+(execute cmd @val07 cd projects/krdmakit/exp; ./kernel_twosided_rc_client -vid=7 -or_sz=1 -threads=18 -run_sec=20 -port=1 -gid=fe80:0000:0000:0000:248a:0703:009c:7e00
+connect val07
+(execute cmd @val08 cd projects/krdmakit/exp; ./kernel_twosided_rc_client -vid=8 -or_sz=1 -threads=18 -run_sec=20 -port=1 -gid=fe80:0000:0000:0000:248a:0703:009c:7e00
+connect val08
+(execute cmd @val12 cd projects/krdmakit/exp; ./kernel_twosided_rc_client -vid=9 -or_sz=1 -threads=18 -run_sec=20 -port=1 -gid=fe80:0000:0000:0000:248a:0703:009c:7e00
+connect val12
+(execute cmd @val14 cd projects/krdmakit/exp; ./kernel_twosided_rc_client -vid=10 -or_sz=1 -threads=18 -run_sec=20 -port=1 -gid=fe80:0000:0000:0000:248a:0703:009c:7e00
+connect val14
+@val01      [39m[reporter.hh:34] epoch @ 0: thpt: 2.73154e+06 reqs/sec.1.00007e+06 msec passed since last epoch. 6.5897 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 2.6997e+06 reqs/sec.1.0002e+06 msec passed since last epoch. 6.66741 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 2.63383e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 6.83415 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 2.36208e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 7.62041 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 2.23415e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 8.05676 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 2.09452e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 8.59385 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 1.94716e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 9.24426 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 1.88926e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 9.52756 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 1.82435e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 9.86653 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 1.73072e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 10.4003 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 10: thpt: 1.68662e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 10.6723 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 11: thpt: 1.63897e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 10.9825 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 12: thpt: 1.56851e+06 reqs/sec.1.00006e+06 msec passed since last epoch. 11.4759 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 13: thpt: 1.53433e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 11.7315 us/op
+@val02      [39m[reporter.hh:34] epoch @ 0: thpt: 2.79213e+06 reqs/sec.1.00007e+06 msec passed since last epoch. 6.44669 us/op
+@val02      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 2.65824e+06 reqs/sec.1.00022e+06 msec passed since last epoch. 6.77139 us/op
+@val02      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 2.5039e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 7.18879 us/op
+@val02      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 2.26152e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 7.95925 us/op
+@val02      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 2.172e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 8.28729 us/op
+@val02      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 2.07505e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 8.6745 us/op
+@val02      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 1.96177e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 9.17538 us/op
+@val02      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 1.91036e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 9.42232 us/op
+@val02      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 1.84878e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 9.73618 us/op
+@val02      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 1.76808e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 10.1805 us/op
+@val02      [0m[39m[reporter.hh:34] epoch @ 10: thpt: 1.72344e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 10.4442 us/op
+@val02      [0m[39m[reporter.hh:34] epoch @ 11: thpt: 1.67717e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 10.7324 us/op
+@val02      [0m[39m[reporter.hh:34] epoch @ 12: thpt: 1.60208e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 11.2354 us/op
+@val03      [39m[reporter.hh:34] epoch @ 0: thpt: 2.46838e+06 reqs/sec.1.00007e+06 msec passed since last epoch. 7.29222 us/op
+@val03      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 2.36864e+06 reqs/sec.1.00024e+06 msec passed since last epoch. 7.5993 us/op
+@val03      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 2.23633e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 8.04891 us/op
+@val03      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 2.06926e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 8.69878 us/op
+@val03      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 2.00261e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 8.98829 us/op
+@val03      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 1.93259e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 9.31395 us/op
+@val03      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 1.83426e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 9.81324 us/op
+@val03      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 1.79008e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 10.0554 us/op
+@val03      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 1.74532e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 10.3133 us/op
+@val03      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 1.66825e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 10.7898 us/op
+@val03      [0m[39m[reporter.hh:34] epoch @ 10: thpt: 1.63022e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 11.0415 us/op
+@val04      [39m[reporter.hh:34] epoch @ 0: thpt: 2.23242e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 8.063 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 2.15761e+06 reqs/sec.1.00023e+06 msec passed since last epoch. 8.34256 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 2.07342e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 8.6813 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 1.95259e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 9.21854 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 1.89855e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 9.4809 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 1.83878e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 9.78912 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 1.75678e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 10.246 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 1.71489e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 10.4963 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 1.6754e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 10.7437 us/op
+@val05      [39m[reporter.hh:34] epoch @ 0: thpt: 1.81385e+06 reqs/sec.1.00007e+06 msec passed since last epoch. 9.92362 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 1.75497e+06 reqs/sec.1.0002e+06 msec passed since last epoch. 10.2566 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 1.70008e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 10.5877 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 1.60667e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 11.2033 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 1.56972e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 11.467 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 1.53476e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 11.7282 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 1.46706e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 12.2695 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 1.43394e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 12.5528 us/op
+@val06      [39m[reporter.hh:34] epoch @ 0: thpt: 1.58227e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 11.3761 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 1.53453e+06 reqs/sec.1.00018e+06 msec passed since last epoch. 11.73 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 1.49079e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 12.0741 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 1.42909e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 12.5954 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 1.39676e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 12.887 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 1.36689e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 13.1686 us/op
+@val07      [39m[reporter.hh:34] epoch @ 0: thpt: 1.48569e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 12.1156 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 1.44647e+06 reqs/sec.1.00018e+06 msec passed since last epoch. 12.4441 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 1.40832e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 12.7812 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 1.34588e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 13.3741 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 1.31563e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 13.6817 us/op
+@val08      [39m[reporter.hh:34] epoch @ 0: thpt: 1.42842e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 12.6013 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 1.39356e+06 reqs/sec.1.00016e+06 msec passed since last epoch. 12.9166 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 1.36208e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 13.2151 us/op
+@val12      [39m[reporter.hh:34] epoch @ 0: thpt: 1.53973e+06 reqs/sec.1.00007e+06 msec passed since last epoch. 11.6904 us/op
+@val12      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 1.50612e+06 reqs/sec.1.00019e+06 msec passed since last epoch. 11.9513 us/op
+@val14      [39m[reporter.hh:34] epoch @ 0: thpt: 1.57548e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 11.4251 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 1.59923e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 11.2554 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 1.30992e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 13.7413 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 1.30679e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 13.7742 us/op
+@val12      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 1.46982e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 12.2464 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 14: thpt: 1.49538e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 12.037 us/op
+@val03      [0m[39m[reporter.hh:34] epoch @ 11: thpt: 1.59122e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 11.3121 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 1.40301e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 12.8295 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 1.28821e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 13.9729 us/op
+@val02      [0m[39m[reporter.hh:34] epoch @ 13: thpt: 1.59749e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 11.2677 us/op
+@val14      [0m[39m[reporter.hh:34] epoch @ 1: thpt: 1.59022e+06 reqs/sec.1.00019e+06 msec passed since last epoch. 11.3192 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 10: thpt: 1.59899e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 11.2571 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 1.30619e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 13.7805 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 1.30933e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 13.7475 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 1.28837e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 13.9711 us/op
+@val12      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 1.46945e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 12.2495 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 15: thpt: 1.49587e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 12.0331 us/op
+@val03      [0m[39m[reporter.hh:34] epoch @ 12: thpt: 1.59053e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 11.317 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 1.40251e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 12.8341 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 1.30606e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 13.7819 us/op
+@val14      [0m[39m[reporter.hh:34] epoch @ 2: thpt: 1.59344e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 11.2963 us/op
+@val02      [0m[39m[reporter.hh:34] epoch @ 14: thpt: 1.59705e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 11.2708 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 1.30925e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 13.7483 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 11: thpt: 1.59849e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 11.2606 us/op
+@val03      [0m[39m[reporter.hh:34] epoch @ 13: thpt: 1.59055e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 11.3169 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 10: thpt: 1.40229e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 12.8361 us/op
+@val12      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 1.46935e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 12.2503 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 16: thpt: 1.49535e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 12.0373 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 1.28819e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 13.973 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 12: thpt: 1.59798e+06 reqs/sec.1.00015e+06 msec passed since last epoch. 11.2642 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 1.30301e+06 reqs/sec.1.00015e+06 msec passed since last epoch. 13.8142 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 1.30941e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 13.7467 us/op
+@val14      [0m[39m[reporter.hh:34] epoch @ 3: thpt: 1.59318e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 11.2982 us/op
+@val02      [0m[39m[reporter.hh:34] epoch @ 15: thpt: 1.59723e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 11.2695 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 17: thpt: 1.49667e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 12.0267 us/op
+@val03      [0m[39m[reporter.hh:34] epoch @ 14: thpt: 1.59074e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 11.3155 us/op
+@val12      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 1.46999e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 12.2449 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 11: thpt: 1.40285e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 12.831 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 1.28888e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 13.9656 us/op
+@val02      [0m[39m[reporter.hh:34] epoch @ 16: thpt: 1.59753e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 11.2674 us/op
+@val14      [0m[39m[reporter.hh:34] epoch @ 4: thpt: 1.60273e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 11.2308 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 10: thpt: 1.30298e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 13.8145 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 1.30984e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 13.7421 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 13: thpt: 1.59885e+06 reqs/sec.1.00015e+06 msec passed since last epoch. 11.2581 us/op
+@val03      [0m[39m[reporter.hh:34] epoch @ 15: thpt: 1.59074e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 11.3155 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 18: thpt: 1.49712e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 12.0231 us/op
+@val12      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 1.47004e+06 reqs/sec.1.00007e+06 msec passed since last epoch. 12.2446 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 12: thpt: 1.40519e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 12.8096 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 1.28627e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 13.9939 us/op
+@val14      [0m[39m[reporter.hh:34] epoch @ 5: thpt: 1.60319e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 11.2276 us/op
+@val02      [0m[39m[reporter.hh:34] epoch @ 17: thpt: 1.5975e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 11.2676 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 14: thpt: 1.59925e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 11.2553 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 11: thpt: 1.30301e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 13.8141 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 1.3095e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 13.7457 us/op
+@val12      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 1.47426e+06 reqs/sec.1.00007e+06 msec passed since last epoch. 12.2095 us/op
+@val01      [0m[39m[reporter.hh:34] epoch @ 19: thpt: 1.49552e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 12.036 us/op
+@val01      [0m[39m[kernel_twosided_rc_client.cc:102] retry total cnt:10424, retry op per batch:0.000298142
+@val01      [0m[35m[kernel_twosided_rc_client.cc:104] done
+@val01      [0m
+exit  val01
+@val07      [0m[39m[reporter.hh:34] epoch @ 10: thpt: 1.29252e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 13.9263 us/op
+@val03      [0m[39m[reporter.hh:34] epoch @ 16: thpt: 1.59381e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 11.2937 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 13: thpt: 1.40948e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 12.7706 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 15: thpt: 1.63975e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 10.9773 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 12: thpt: 1.33534e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 13.4797 us/op
+@val14      [0m[39m[reporter.hh:34] epoch @ 6: thpt: 1.64e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 10.9756 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 1.34126e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 13.4202 us/op
+@val02      [0m[39m[reporter.hh:34] epoch @ 18: thpt: 1.63505e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 11.0088 us/op
+@val12      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 1.54964e+06 reqs/sec.1.00007e+06 msec passed since last epoch. 11.6156 us/op
+@val03      [0m[39m[reporter.hh:34] epoch @ 17: thpt: 1.66184e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 10.8314 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 14: thpt: 1.4628e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 12.3052 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 11: thpt: 1.34762e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 13.3569 us/op
+@val14      [0m[39m[reporter.hh:34] epoch @ 7: thpt: 1.67772e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 10.7289 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 16: thpt: 1.6769e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 10.7341 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 10: thpt: 1.36993e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 13.1394 us/op
+@val02      [0m[39m[reporter.hh:34] epoch @ 19: thpt: 1.67205e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 10.7653 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 13: thpt: 1.36493e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 13.1875 us/op
+@val02      [0m[39m[kernel_twosided_rc_client.cc:102] retry total cnt:4514, retry op per batch:0.000128717
+@val02      [0m[35m[kernel_twosided_rc_client.cc:104] done
+@val02      [0m
+exit  val02
+@val03      [0m[39m[reporter.hh:34] epoch @ 18: thpt: 1.71244e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 10.5113 us/op
+@val12      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 1.59782e+06 reqs/sec.1.00007e+06 msec passed since last epoch. 11.2653 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 15: thpt: 1.50866e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 11.9312 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 12: thpt: 1.38904e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 12.9586 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 14: thpt: 1.43473e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 12.5459 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 17: thpt: 1.76292e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 10.2103 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 11: thpt: 1.4334e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 12.5575 us/op
+@val14      [0m[39m[reporter.hh:34] epoch @ 8: thpt: 1.76458e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 10.2007 us/op
+@val03      [0m[39m[reporter.hh:34] epoch @ 19: thpt: 1.75359e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 10.2647 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 16: thpt: 1.54544e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 11.6472 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 13: thpt: 1.42114e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 12.6659 us/op
+@val03      [0m[39m[kernel_twosided_rc_client.cc:102] retry total cnt:4657, retry op per batch:0.000138516
+@val03      [0m[35m[kernel_twosided_rc_client.cc:104] done
+@val03      [0m
+exit  val03
+@val12      [0m[39m[reporter.hh:34] epoch @ 10: thpt: 1.63787e+06 reqs/sec.1.00007e+06 msec passed since last epoch. 10.9899 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 12: thpt: 1.47723e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 12.185 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 18: thpt: 1.81996e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 9.89034 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 15: thpt: 1.48498e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 12.1214 us/op
+@val14      [0m[39m[reporter.hh:34] epoch @ 9: thpt: 1.81952e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 9.89274 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 17: thpt: 1.63621e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 11.001 us/op
+@val12      [0m[39m[reporter.hh:34] epoch @ 11: thpt: 1.73828e+06 reqs/sec.1.00007e+06 msec passed since last epoch. 10.355 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 14: thpt: 1.49779e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 12.0177 us/op
+@val14      [0m[39m[reporter.hh:34] epoch @ 10: thpt: 1.87365e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 9.60691 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 16: thpt: 1.53025e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 11.7628 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 13: thpt: 1.51682e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 11.8669 us/op
+@val04      [0m[39m[reporter.hh:34] epoch @ 19: thpt: 1.87229e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 9.61392 us/op
+@val04      [0m[39m[kernel_twosided_rc_client.cc:102] retry total cnt:4661, retry op per batch:0.000140799
+@val04      [0m[35m[kernel_twosided_rc_client.cc:104] done
+@val04      [0m
+exit  val04
+@val12      [0m[39m[reporter.hh:34] epoch @ 12: thpt: 1.80081e+06 reqs/sec.1.00007e+06 msec passed since last epoch. 9.99548 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 18: thpt: 1.69827e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 10.599 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 15: thpt: 1.55739e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 11.5578 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 14: thpt: 1.62819e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 11.0552 us/op
+@val14      [0m[39m[reporter.hh:34] epoch @ 11: thpt: 2.01813e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 8.91915 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 17: thpt: 1.64213e+06 reqs/sec.1.00013e+06 msec passed since last epoch. 10.9614 us/op
+@val05      [0m[39m[reporter.hh:34] epoch @ 19: thpt: 1.75822e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 10.2376 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 16: thpt: 1.61272e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 11.1613 us/op
+@val12      [0m[39m[reporter.hh:34] epoch @ 13: thpt: 1.86661e+06 reqs/sec.1.00007e+06 msec passed since last epoch. 9.64317 us/op
+@val05      [0m[39m[kernel_twosided_rc_client.cc:102] retry total cnt:13962, retry op per batch:0.000482167
+@val05      [0m[35m[kernel_twosided_rc_client.cc:104] done
+@val05      [0m
+exit  val05
+@val08      [0m[39m[reporter.hh:34] epoch @ 15: thpt: 1.68423e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 10.6874 us/op
+@val14      [0m[39m[reporter.hh:34] epoch @ 12: thpt: 2.09311e+06 reqs/sec.1.00009e+06 msec passed since last epoch. 8.59966 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 18: thpt: 1.70743e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 10.5422 us/op
+@val12      [0m[39m[reporter.hh:34] epoch @ 14: thpt: 2.00018e+06 reqs/sec.1.00007e+06 msec passed since last epoch. 8.99918 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 17: thpt: 1.73177e+06 reqs/sec.1.00012e+06 msec passed since last epoch. 10.394 us/op
+@val14      [0m[39m[reporter.hh:34] epoch @ 13: thpt: 2.17398e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 8.27974 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 16: thpt: 1.74027e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 10.3432 us/op
+@val06      [0m[39m[reporter.hh:34] epoch @ 19: thpt: 1.77292e+06 reqs/sec.1.00014e+06 msec passed since last epoch. 10.1527 us/op
+@val06      [0m[39m[kernel_twosided_rc_client.cc:102] retry total cnt:18224, retry op per batch:0.000673311
+@val06      [0m[35m[kernel_twosided_rc_client.cc:104] done
+@val06      [0m
+exit  val06
+@val07      [0m[39m[reporter.hh:34] epoch @ 18: thpt: 1.80223e+06 reqs/sec.1.00015e+06 msec passed since last epoch. 9.9876 us/op
+@val12      [0m[39m[reporter.hh:34] epoch @ 15: thpt: 2.07526e+06 reqs/sec.1.00007e+06 msec passed since last epoch. 8.67363 us/op
+@val14      [0m[39m[reporter.hh:34] epoch @ 14: thpt: 2.33717e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 7.70162 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 17: thpt: 1.87552e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 9.59732 us/op
+@val12      [0m[39m[reporter.hh:34] epoch @ 16: thpt: 2.1561e+06 reqs/sec.1.00007e+06 msec passed since last epoch. 8.34839 us/op
+@val07      [0m[39m[reporter.hh:34] epoch @ 19: thpt: 1.87002e+06 reqs/sec.1.00011e+06 msec passed since last epoch. 9.62555 us/op
+@val07      [0m[39m[kernel_twosided_rc_client.cc:102] retry total cnt:18594, retry op per batch:0.0006827
+@val07      [0m[35m[kernel_twosided_rc_client.cc:104] done
+@val07      [0m
+exit  val07
+@val14      [0m[39m[reporter.hh:34] epoch @ 15: thpt: 2.42982e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 7.40794 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 18: thpt: 1.96251e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 9.17194 us/op
+@val12      [0m[39m[reporter.hh:34] epoch @ 17: thpt: 2.33564e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 7.70667 us/op
+@val14      [0m[39m[reporter.hh:34] epoch @ 16: thpt: 2.53626e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 7.09707 us/op
+@val08      [0m[39m[reporter.hh:34] epoch @ 19: thpt: 2.05587e+06 reqs/sec.1.0001e+06 msec passed since last epoch. 8.75544 us/op
+@val08      [0m[39m[kernel_twosided_rc_client.cc:102] retry total cnt:20410, retry op per batch:0.000718064
+@val08      [0m[35m[kernel_twosided_rc_client.cc:104] done
+@val08      [0m
+exit  val08
+@val12      [0m[39m[reporter.hh:34] epoch @ 18: thpt: 2.44051e+06 reqs/sec.1.00007e+06 msec passed since last epoch. 7.37551 us/op
+@val14      [0m[39m[reporter.hh:34] epoch @ 17: thpt: 2.71584e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 6.62778 us/op
+@val12      [0m[39m[reporter.hh:34] epoch @ 19: thpt: 2.5446e+06 reqs/sec.1.00007e+06 msec passed since last epoch. 7.0738 us/op
+@val12      [0m[39m[kernel_twosided_rc_client.cc:102] retry total cnt:10517, retry op per batch:0.000317368
+@val12      [0m[35m[kernel_twosided_rc_client.cc:104] done
+@val12      [0m
+exit  val12
+@val14      [0m[39m[reporter.hh:34] epoch @ 18: thpt: 2.78111e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 6.47223 us/op
+@val14      [0m[39m[reporter.hh:34] epoch @ 19: thpt: 2.8484e+06 reqs/sec.1.00008e+06 msec passed since last epoch. 6.31934 us/op
+@val14      [0m[39m[kernel_twosided_rc_client.cc:102] retry total cnt:5173, retry op per batch:0.000138771
+@val14      [0m[35m[kernel_twosided_rc_client.cc:104] done
+@val14      [0m
+exit  val14
+exit  val09
