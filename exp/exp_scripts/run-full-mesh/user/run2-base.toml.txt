@@ -1,2 +1,0 @@
-(execute cmd @val08 cd projects/krdmakit/exp; ./connect_user_server -run_sec=20
-connect val08

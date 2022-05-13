@@ -1,4 +1,0 @@
-(execute cmd @val08 cd projects/krdmakit/exp; ./connect_user_server -run_sec=20
-connect val08
-(execute cmd @val01 cd projects/krdmakit/exp; ./connect_user_worker -addr=val01 -kv_addr=val08:8000 -run_sec=15
-connect val01

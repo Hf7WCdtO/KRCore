@@ -1,2 +1,0 @@
-(execute cmd @val08 cd projects/krdmakit/exp; ./user_payload_trc_server -host_len=1 -threads=1 -port=8000 -write_imm=0
-connect val08

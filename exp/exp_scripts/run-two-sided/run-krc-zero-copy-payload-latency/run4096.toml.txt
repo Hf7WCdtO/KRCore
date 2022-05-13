@@ -1,2 +1,0 @@
-(execute cmd @val08 cd projects/krdmakit/exp; ./kernel_twosided_rc_zcpy_server -host_len=1 -or_sz=2048 -run_sec=15 -port=1
-connect val08

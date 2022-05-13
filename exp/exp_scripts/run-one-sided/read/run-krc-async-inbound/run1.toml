@@ -1,6 +1,0 @@
-global_configs= "-rdma_op=0 -or_sz=12 -threads=1 -payload_sz=8 -run_sec=10 -gid=fe80:0000:0000:0000:ec0d:9a03:00ca:31d8"
-
-[[pass]]
-host = "val01"
-path = ''
-cmd = 'cd projects/krdmakit/exp; ./krc_client_sync'

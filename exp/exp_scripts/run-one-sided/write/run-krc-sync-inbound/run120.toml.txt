@@ -1,2 +1,0 @@
-(execute cmd @val01 cd projects/krdmakit/exp; ./krc_client_sync
-connect val01
